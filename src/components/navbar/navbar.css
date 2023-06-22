@@ -106,7 +106,7 @@
     }
 
     .navbar .container-mobile .topContainer .center h1 {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .navbar .container-mobile .topContainer .right {
@@ -115,6 +115,7 @@
 
     .navbar .container-mobile .topContainer .right .menuItem {
         font-size: 11px;
+        font-weight: 400;
     }
 
     .navbar .container-mobile .topContainer .right {
@@ -126,7 +127,6 @@
 
     .navbar .container-mobile .bottomContainer {
         margin-top: 5px;
-
         margin-left: 2px;
         margin-right: 2px;
     }
@@ -138,11 +138,13 @@
         justify-content: space-between;
         text-align: center;
         padding: 5px;
+        border-radius: 3px;
 
     }
 
     .navbar .container-mobile .bottomContainer .searchContainer input {
-        border: none
+        border: none;
+        width: 95%;
     }
 
 

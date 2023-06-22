@@ -64,7 +64,7 @@ function Navbar() {
                         <input
                             name="searchInput"
                             type="text"
-                            placeholder="search"
+                            placeholder="Search"
                         />
                         <SearchIcon style={{ fontSize: 16, color: "gray" }} />
                     </div>
