@@ -1,0 +1,63 @@
+.navbar {
+
+    padding: 5px 15px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.navbar .container>* {
+    flex: 1;
+    align-items: center;
+    display: flex;
+
+}
+
+.navbar .container .language {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.navbar .container .left .searchContainer {
+    border: 0.5px solid lightgray;
+    align-items: center;
+    display: flex;
+    padding: 2px;
+    margin-left: 15px;
+
+}
+
+.navbar .container .left .searchContainer input {
+    border: none
+}
+
+
+
+.navbar .container .centre {
+    text-align: center;
+    justify-content: center;
+}
+
+.navbar .container .centre h1 {
+    font-weight: bold;
+    font-size: 35px;
+
+}
+
+.navbar .container .right {
+    justify-content: flex-end;
+}
+
+.navbar .container .right .menuItem {
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 25px;
+
+}
