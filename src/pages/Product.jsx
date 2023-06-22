@@ -12,6 +12,7 @@ function Product() {
             <div className="productContainer">
                 <div className="imgContainer"></div>
                 <div className="infoContainer"></div>
+                <div className="filterContainer"></div>
             </div>
             <Newsletter />
             <Footer />

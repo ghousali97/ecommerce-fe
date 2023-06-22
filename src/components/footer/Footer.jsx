@@ -48,7 +48,7 @@ function Footer() {
             <div className='contactItem'>
                 <MailIcon style={{ marginRight: "10px" }} /> ali@test.com
             </div>
-            <img src="https://www.pngitem.com/pimgs/m/179-1792550_payment-methods-images-png-transparent-png.png" />
+            <img src="https://www.pngitem.com/pimgs/m/179-1792550_payment-methods-images-png-transparent-png.png" alt="" />
         </div>
     </div >
 }

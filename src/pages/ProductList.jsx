@@ -1,6 +1,6 @@
 import Announcement from "../components/announcement/Announcement";
 import Navbar from "../components/navbar/Navbar";
-import Categories from "../components/categories/Categories";
+
 import Newsletter from "../components/newsletter/Newsletter";
 import Footer from "../components/footer/Footer";
 import './productList.css'
