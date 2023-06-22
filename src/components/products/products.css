@@ -10,6 +10,7 @@
 
     .products {
         flex-direction: column;
+        padding-top: 30px;
     }
 
 

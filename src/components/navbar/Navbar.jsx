@@ -38,7 +38,41 @@ function Navbar() {
                     </div>
                 </div>
             </div>
-        </div>
+            <div className="container-mobile">
+
+                <div className="topContainer">
+                    <div className="left"></div>
+                    <div className="center"> <h1>Ecommerce.</h1></div>
+                    <div className="right">
+                        <div className="menuItem">
+                            REGISTER
+                        </div>
+                        <div className="menuItem">
+                            SIGN IN
+                        </div>
+                        <div className="menuItem">
+                            <div className="badge">
+                                <Badge badgeContent={4} color="primary" style={{ fontSize: 160 }}>
+                                    <ShoppingCartOutlinedIcon style={{ fontSize: 18 }} />
+                                </Badge>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="bottomContainer">
+                    <div className="searchContainer">
+                        <input
+                            name="searchInput"
+                            type="text"
+                            placeholder="search"
+                        />
+                        <SearchIcon style={{ fontSize: 16, color: "gray" }} />
+                    </div>
+
+                </div>
+
+            </div>
+        </div >
     )
 }
 
