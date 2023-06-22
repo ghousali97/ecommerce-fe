@@ -1,11 +1,24 @@
-import React from "react";
+import React, { createRef } from "react";
 import SearchIcon from '@mui/icons-material/Search';
 import Badge from '@mui/material/Badge';
-
+import CloseSharpIcon from '@mui/icons-material/CloseSharp';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import './navbar.css'
 
 function Navbar() {
+
+    const searchBar = createRef();
+    const navBar = createRef();
+
+    function closeSearch() {
+        searchBar.current.style.display = 'none';
+        navBar.current.style.display = 'flex';
+    }
+    function openSearch() {
+
+        searchBar.current.style.display = 'flex';
+        navBar.current.style.display = 'none';
+    }
     return (
         <div className="navbar">
             <div className="container">
@@ -40,8 +53,10 @@ function Navbar() {
             </div>
             <div className="container-mobile">
 
-                <div className="topContainer">
-                    <div className="left"></div>
+                <div className="topContainer" ref={navBar}>
+                    <div className="left">
+                        <SearchIcon onClick={openSearch} style={{ fontSize: 18, color: "gray" }} />
+                    </div>
                     <div className="center"> <h1>Ecommerce.</h1></div>
                     <div className="right">
                         <div className="menuItem">
@@ -59,14 +74,15 @@ function Navbar() {
                         </div>
                     </div>
                 </div>
-                <div className="bottomContainer">
-                    <div className="searchContainer">
+                <div className="bottomContainer" ref={searchBar}>
+                    <div className="searchContainer" >
                         <input
                             name="searchInput"
                             type="text"
                             placeholder="Search"
                         />
-                        <SearchIcon style={{ fontSize: 16, color: "gray" }} />
+                        <CloseSharpIcon onClick={closeSearch} style={{ fontSize: 16, color: "gray" }} />
+
                     </div>
 
                 </div>
