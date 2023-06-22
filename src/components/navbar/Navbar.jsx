@@ -59,9 +59,7 @@ function Navbar() {
                     </div>
                     <div className="center"> <h1>Ecommerce.</h1></div>
                     <div className="right">
-                        <div className="menuItem">
-                            REGISTER
-                        </div>
+
                         <div className="menuItem">
                             SIGN IN
                         </div>

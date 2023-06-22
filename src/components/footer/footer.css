@@ -104,21 +104,25 @@
 @media (max-width:600px) {
     .footer {
         flex-direction: column;
+        padding: 5px 10px;
+
     }
 
     .footer>* {
         padding: 5px 50px;
         margin: 0px;
-        width: 100%
+        width: 100%;
     }
 
-    .footer .right {
-        background-color: #eee;
+    .footer .left h1 {
+        font-size: 25px;
     }
 
     .footer .centre {
         display: none;
     }
+
+
 
 
 
