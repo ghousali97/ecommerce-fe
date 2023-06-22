@@ -1,0 +1,33 @@
+.product .productContainer {
+    display: flex;
+
+    padding: 40px;
+}
+
+.product .productContainer>* {
+    flex: 1;
+    padding: 0px 10px;
+}
+
+.product .productContainer .imgContainer img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.product .productContainer .infoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.product .productContainer .infoContainer h1 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.product .productContainer .infoContainer p {
+    font-size: 17px;
+    font-weight: 250;
+    margin-bottom: 20px;
+}
