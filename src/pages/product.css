@@ -1,12 +1,13 @@
 .product .productContainer {
     display: flex;
 
-    padding: 40px;
+    padding: 20px 30px;
 }
 
 .product .productContainer>* {
     flex: 1;
     padding: 0px 10px;
+    padding-right: 20px;
 }
 
 .product .productContainer .imgContainer img {
@@ -18,16 +19,95 @@
 .product .productContainer .infoContainer {
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
 }
 
 .product .productContainer .infoContainer h1 {
     font-size: 40px;
     font-weight: 300;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .product .productContainer .infoContainer p {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 250;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    word-spacing: 2px;
+}
+
+.product .productContainer .infoContainer h3 {
+    font-size: 50px;
+    font-weight: 100;
+
+}
+
+.product .productContainer .filterContainer {
+    width: 50%;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.product .productContainer .filterContainer .filter {
+    display: flex;
+    align-items: center;
+}
+
+.product .productContainer .filterContainer .filter span {
+    font-size: 22px;
+    font-weight: 200;
+    margin-right: 10px;
+}
+
+.product .productContainer .filterContainer .filter select {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.product .productContainer .filterContainer .filter .colorFilter {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.product .productContainer .filterContainer .filter .colorFilter:hover {
+    transform: scale(1.1);
+}
+
+.product .productContainer .addContainer {
+    width: 50%;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.product .productContainer .addContainer .amountContainer {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+
+}
+
+.product .productContainer .addContainer .amountContainer span {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+}
+
+.product .productContainer .addContainer button {
+    padding: 15px;
+    border: 2px solid teal;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 500;
 }

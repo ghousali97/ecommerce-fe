@@ -27,6 +27,9 @@ function Product() {
                     <div className="filterContainer">
                         <div className="filter">
                             <span>Color</span>
+                            <div className="colorFilter" style={{ backgroundColor: 'red' }}></div>
+                            <div className="colorFilter" style={{ backgroundColor: 'blue' }}></div>
+                            <div className="colorFilter" style={{ backgroundColor: 'green' }}></div>
                         </div>
                         <div className="filter">
                             <span>Size</span>
