@@ -46,3 +46,18 @@
     background-color: teal;
     border: none;
 }
+
+@media (max-width:600px) {
+    .newsletter {
+        height: 60vh;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .newsletter .inputContainer {
+        width: 80%
+    }
+
+
+
+}

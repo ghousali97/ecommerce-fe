@@ -41,3 +41,9 @@
     color: gray;
     cursor: pointer;
 }
+
+@media (max-width:600px) {
+    .categoryitem {
+        margin-top: 1px;
+    }
+}

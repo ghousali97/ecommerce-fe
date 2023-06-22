@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-top: 0.5px solid gainsboro;
     padding-top: 30px;
 }
@@ -80,8 +79,6 @@
 
 }
 
-.footer .right {}
-
 .footer .right h3 {
     font-size: 25px;
     margin-bottom: 30px;
@@ -101,5 +98,28 @@
     max-height: 50PX;
 
     object-fit: cover;
+
+}
+
+@media (max-width:600px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer>* {
+        padding: 5px 50px;
+        margin: 0px;
+        width: 100%
+    }
+
+    .footer .right {
+        background-color: #eee;
+    }
+
+    .footer .centre {
+        display: none;
+    }
+
+
 
 }

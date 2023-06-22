@@ -7,7 +7,7 @@ import SendIcon from '@mui/icons-material/Send';
 function Newsletter() {
     return (
         <div className='newsletter'>
-            <h1 >Newletter</h1>
+            <h1 >Newletters</h1>
             <div className='description'>
                 Get timely updates from your favorite products.
             </div>
