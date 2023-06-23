@@ -64,3 +64,45 @@
     color: black;
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+
+
+    .register .formContainer {
+        width: 80%;
+        padding: 30px 20px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .register .formContainer h1 {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .register .formContainer form {
+        justify-content: left;
+
+
+    }
+
+    .register .formContainer form input {
+        width: 100%;
+
+        padding: 7px;
+    }
+
+    .register .formContainer form button {
+
+        padding: 9px 12px;
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+
+    .register .formContainer a {
+
+        font-size: 11px;
+
+    }
+}

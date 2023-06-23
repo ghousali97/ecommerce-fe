@@ -12,10 +12,10 @@ function Login() {
                 <input placeholder="username" name="uname" type="text" />
                 <input placeholder="password" name="password" type="password" />
                 <button>Log in</button>
-                <Link> Forgot password?</Link>
-                <Link to="/register">Create a new account</Link>
 
             </form>
+            <Link> Forgot password?</Link>
+            <Link to="/register">Create a new account</Link>
 
         </div>
 
