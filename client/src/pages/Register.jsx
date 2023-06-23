@@ -16,9 +16,9 @@ function Register() {
                 <input placeholder="password" name="password" type="password" />
                 <input placeholder="confirm password" name="cpassword" type="password" />
                 <button>Sign up</button>
-                <Link to="/login">Already have an account?</Link>
-            </form>
 
+            </form>
+            <Link to="/login">Already have an account?</Link>
         </div>
 
     </div>)

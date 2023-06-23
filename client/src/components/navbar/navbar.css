@@ -69,6 +69,13 @@
     cursor: pointer;
     margin-left: 25px;
 
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 
 @media (max-width: 600px) {

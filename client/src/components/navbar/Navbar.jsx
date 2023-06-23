@@ -1,4 +1,5 @@
 import React, { createRef } from "react";
+import { Link } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import Badge from '@mui/material/Badge';
 import CloseSharpIcon from '@mui/icons-material/CloseSharp';
@@ -34,13 +35,16 @@ function Navbar() {
                     </div>
 
                 </div>
-                <div className="centre"> <h1>Ecommerce.</h1></div>
+                <div className="centre"> <h1>
+                    <Link to="/"> Ecommerce.</Link> </h1></div>
                 <div className="right">
+
                     <div className="menuItem">
-                        REGISTER
+                        <Link to="/register"> REGISTER</Link>
                     </div>
                     <div className="menuItem">
-                        SIGN IN
+                        <Link to="/login">  SIGN IN</Link>
+
                     </div>
                     <div className="menuItem">
                         <div className="badge">
