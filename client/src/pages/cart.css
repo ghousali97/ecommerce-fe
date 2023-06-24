@@ -1,0 +1,118 @@
+.cart .cartContainer {
+
+    padding: 20px;
+}
+
+.cart .cartContainer h1 {
+    font-weight: 300;
+    text-align: center;
+}
+
+.cart .cartContainer .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.cart .cartContainer .top .checkoutButton button {
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+
+}
+
+.cart .cartContainer .top .continueButton button {
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    border: filled;
+    background-color: transparent;
+    color: black;
+}
+
+.cart .cartContainer .top .topTexts span {
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+
+.cart .cartContainer .bottom {
+    display: flex;
+
+}
+
+.cart .cartContainer .bottom .info {
+    flex: 3;
+    height: 500px;
+    background-color: red;
+
+}
+
+.cart .cartContainer .bottom .info .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart .cartContainer .bottom .info .product .productDetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.cart .cartContainer .bottom .summary {
+    flex: 1;
+    border: 0.5px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    height: 50vh;
+}
+
+
+.cart .cartContainer .bottom .summary h1 {
+    font-weight: 300;
+}
+
+.cart .cartContainer .bottom .summary .summaryItems {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cart .cartContainer .bottom .summary .summaryItems .summaryItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.cart .cartContainer .bottom .summary .summaryItems hr {
+    margin: 10px 0px;
+}
+
+.cart .cartContainer .bottom .summary .summaryItems .summaryTotal {
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.cart .cartContainer .bottom .summary button {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 90%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
