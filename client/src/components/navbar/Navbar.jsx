@@ -68,11 +68,13 @@ function Navbar() {
                             <Link to="/login">  SIGN IN </Link>
                         </div>
                         <div className="menuItem">
-                            <div className="badge">
-                                <Badge badgeContent={4} color="primary" style={{ fontSize: 160 }}>
-                                    <ShoppingCartOutlinedIcon style={{ fontSize: 18 }} />
-                                </Badge>
-                            </div>
+                            <Link to="/cart">
+                                <div className="badge">
+                                    <Badge badgeContent={4} color="primary" style={{ fontSize: 160 }}>
+                                        <ShoppingCartOutlinedIcon style={{ fontSize: 18 }} />
+                                    </Badge>
+                                </div></Link>
+
                         </div>
                     </div>
                 </div>

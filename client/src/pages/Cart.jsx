@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Announcement from "../components/announcement/Announcement";
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/navbar/Navbar";
@@ -12,7 +13,10 @@ function Cart() {
                 <h1> YOUR BAG</h1>
                 <div className="top">
                     <div className="continueButton">
-                        <button>CONTINUE SHOPPING</button>
+                        <Link to="/all">
+                            <button>CONTINUE SHOPPING</button>
+                        </Link>
+
                     </div>
 
                     <div className="topTexts">
