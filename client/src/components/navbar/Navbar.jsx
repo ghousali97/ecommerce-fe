@@ -43,7 +43,7 @@ function Navbar() {
                         <Link to="/register"> REGISTER</Link>
                     </div>
                     <div className="menuItem">
-                        <Link to="/login">  SIGN IN</Link>
+                        <Link to="/login">  SIGN IN Yo</Link>
 
                     </div>
                     <div className="menuItem">
@@ -65,7 +65,7 @@ function Navbar() {
                     <div className="right">
 
                         <div className="menuItem">
-                            SIGN IN
+                            SIGN IN YO
                         </div>
                         <div className="menuItem">
                             <div className="badge">
