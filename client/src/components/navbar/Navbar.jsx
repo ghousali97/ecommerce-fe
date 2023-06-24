@@ -61,11 +61,11 @@ function Navbar() {
                     <div className="left">
                         <SearchIcon onClick={openSearch} style={{ fontSize: 18, color: "gray" }} />
                     </div>
-                    <div className="center"> <h1>Ecommerce.</h1></div>
+                    <div className="center"> <h1>    <Link to="/"> Ecommerce.</Link></h1></div>
                     <div className="right">
 
                         <div className="menuItem">
-                            SIGN IN
+                            <Link to="/login">  SIGN IN </Link>
                         </div>
                         <div className="menuItem">
                             <div className="badge">
