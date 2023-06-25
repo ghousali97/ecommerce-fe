@@ -7,4 +7,9 @@
     justify-content: center;
     font-size: 14px;
     font-weight: 500;
+
+}
+
+.announcment span {
+    margin-right: 5px;
 }

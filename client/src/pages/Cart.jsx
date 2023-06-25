@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import Announcement from "../components/announcement/Announcement";
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/navbar/Navbar";
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
 import './cart.css';
 
 function Cart() {
@@ -13,7 +15,7 @@ function Cart() {
                 <h1> YOUR BAG</h1>
                 <div className="top">
                     <div className="continueButton">
-                        <Link to="/all">
+                        <Link to="/products/all">
                             <button>CONTINUE SHOPPING</button>
                         </Link>
 
@@ -35,23 +37,122 @@ function Cart() {
                             <div className="productDetail">
                                 <img src="https://i.pinimg.com/originals/2d/af/f8/2daff8e0823e51dd752704a47d5b795c.png" alt="" />
                                 <div className="details">
-                                    <b>Product:</b> HAKURA T-SHIRT
-
-                                    <b>ID:</b> 93813718293
-
-                                    <b>Size:</b> M
+                                    <div>
+                                        <b>Product:</b> HAKURA T-SHIRT
+                                    </div>
+                                    <div>
+                                        <b>ID:</b> 93813718293
+                                    </div>
+                                    <div className="color"></div>
+                                    <div>
+                                        <b>Size: </b>
+                                        M</div>
                                 </div>
                             </div>
                             <div className="priceDetail">
-                                <div className="quantityContainer">
-                                    + <div className="quantity">2</div> -
+                                <div className="productAmountContainer">
+                                    <AddIcon />
+                                    <div className="productAmount"> 5</div>
+                                    <RemoveIcon />
                                 </div>
-                                <div className="price">
-                                    <span> $20</span>
+                                <div className="productPrice">
+                                    $ 50
                                 </div>
                             </div>
-                        </div>
 
+
+                        </div>
+                        <hr />
+                        <div className="product">
+                            <div className="productDetail">
+                                <img src="https://i.pinimg.com/originals/2d/af/f8/2daff8e0823e51dd752704a47d5b795c.png" alt="" />
+                                <div className="details">
+                                    <div>
+                                        <b>Product:</b> HAKURA T-SHIRT
+                                    </div>
+                                    <div>
+                                        <b>ID:</b> 93813718293
+                                    </div>
+                                    <div className="color"></div>
+                                    <div>
+                                        <b>Size:</b>
+                                        M</div>
+                                </div>
+                            </div>
+                            <div className="priceDetail">
+                                <div className="productAmountContainer">
+                                    <AddIcon />
+                                    <div className="productAmount"> 5</div>
+                                    <RemoveIcon />
+                                </div>
+                                <div className="productPrice">
+                                    $ 50
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <hr />
+                        <div className="product">
+                            <div className="productDetail">
+                                <img src="https://i.pinimg.com/originals/2d/af/f8/2daff8e0823e51dd752704a47d5b795c.png" alt="" />
+                                <div className="details">
+                                    <div>
+                                        <b>Product:</b> HAKURA T-SHIRT
+                                    </div>
+                                    <div>
+                                        <b>ID:</b> 93813718293
+                                    </div>
+                                    <div className="color"></div>
+                                    <div>
+                                        <b>Size:</b>
+                                        M</div>
+                                </div>
+                            </div>
+                            <div className="priceDetail">
+                                <div className="productAmountContainer">
+                                    <AddIcon />
+                                    <div className="productAmount"> 5</div>
+                                    <RemoveIcon />
+                                </div>
+                                <div className="productPrice">
+                                    $ 50
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <hr />
+                        <div className="product">
+                            <div className="productDetail">
+                                <img src="https://i.pinimg.com/originals/2d/af/f8/2daff8e0823e51dd752704a47d5b795c.png" alt="" />
+                                <div className="details">
+                                    <div>
+                                        <b>Product:</b> HAKURA T-SHIRT
+                                    </div>
+                                    <div>
+                                        <b>ID:</b> 93813718293
+                                    </div>
+                                    <div className="color"></div>
+                                    <div>
+                                        <b>Size:</b>
+                                        M</div>
+                                </div>
+                            </div>
+                            <div className="priceDetail">
+                                <div className="productAmountContainer">
+                                    <AddIcon />
+                                    <div className="productAmount"> 5</div>
+                                    <RemoveIcon />
+                                </div>
+                                <div className="productPrice">
+                                    $ 50
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <hr />
                     </div>
 
 

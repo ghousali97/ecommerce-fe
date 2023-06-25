@@ -4,11 +4,12 @@ import './App.css';
 import ProductList from './pages/ProductList';
 import Product from './pages/Product';
 import Register from './pages/Register';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 import Login from './pages/Login';
 import Pay from './pages/Pay';
 import Cart from './pages/Cart';
 
+const user = false;
 function App() {
 
   const router = createBrowserRouter(
@@ -18,20 +19,23 @@ function App() {
         element: <Home />
       },
       {
-        path: "/all",
+        path: "/products/:category",
+        element: <ProductList />
+      }, {
+        path: "/products/",
         element: <ProductList />
       },
       {
-        path: "/product",
+        path: "/product/:productId",
         element: <Product />
       },
       {
         path: "/register",
-        element: <Register />
+        element: user ? <Navigate to="/" /> : <Register />
       }
       , {
         path: "/login",
-        element: <Login />
+        element: user ? <Navigate to="/" /> : <Login />
       }, {
         path: "/pay",
         element: <Pay />
