@@ -5,18 +5,41 @@ import Newsletter from "../components/newsletter/Newsletter";
 import Footer from "../components/footer/Footer";
 import './productList.css'
 import Products from "../components/products/Products";
+import { useState } from "react";
+import { useLocation } from "react-router-dom";
+import { camelCase, startCase, lowerCase } from 'lodash';
 
 function ProductList() {
+
+    const location = useLocation();
+    const cat = location.pathname.split("/")[2];
+    const [filters, setFilters] = useState({});
+    const [sort, setSort] = useState("");
+
+    function handleFilters(e) {
+        const value = e.target.value;
+        setFilters({
+            ...filters,
+            [e.target.name]: lowerCase(value)
+        });
+        console.log(filters);
+
+    }
+
+    function handleSort(e) {
+        const value = e.target.value;
+        setSort(value);
+    }
 
     return (
         <div className="productList">
             <Announcement />
             <Navbar />
-            <h1> Our products</h1>
+            <h1> {cat ? startCase(camelCase(cat)).replace(/ /g, '') : 'Our Products'}</h1>
             <div className="filterContainer">
                 <div className="filter">
                     <span>Filter by</span>
-                    <select>
+                    <select name='color' onChange={handleFilters}>
                         <option disabled selected>
                             Color
                         </option>
@@ -27,7 +50,7 @@ function ProductList() {
                         <option>Yellow</option>
                         <option>Green</option>
                     </select>
-                    <select>
+                    <select name='size' onChange={handleFilters}>
                         <option disabled selected>
                             Size
                         </option>
@@ -38,13 +61,13 @@ function ProductList() {
                         <option>XL</option>
                     </select></div>
                 <div className="filter"> <span>Sort by</span>
-                    <select>
-                        <option selected>Newest</option>
-                        <option>Price (asc)</option>
-                        <option>Price (desc)</option>
+                    <select onChange={handleSort}>
+                        <option value="newest" selected>Newest</option>
+                        <option value="ascending">Price (asc)</option>
+                        <option value="descending">Price (desc)</option>
                     </select></div>
             </div>
-            <Products />
+            <Products cat={cat} filters={filters} sort={sort} />
             <Newsletter />
             <Footer />
         </div>

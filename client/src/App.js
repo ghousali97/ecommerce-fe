@@ -9,9 +9,9 @@ import Login from './pages/Login';
 import Pay from './pages/Pay';
 import Cart from './pages/Cart';
 
-const user = false;
-function App() {
 
+function App() {
+  const user = true;
   const router = createBrowserRouter(
     [
       {

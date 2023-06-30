@@ -1,16 +1,17 @@
-import { Navigate } from 'react-router-dom';
+
+import { Link } from 'react-router-dom';
 import './categoryitem.css'
 
-function CategoryItem({ category }) {
+function CategoryItem({ categoryItem }) {
 
     return (<div className='categoryitem'>
-        <Navigate to={'/products/' + category.cat}>
-            <img src={category.img} alt="" />
+        <Link to={'/products/' + categoryItem.cat}>  <img src={categoryItem.img} alt="" />
             <div className='infoContainer'>
-                <h1>{category.title}</h1>
+                <h1>{categoryItem.title}</h1>
                 <button>SHOP NOW</button>
-            </div>
-        </Navigate>
+            </div></Link>
+
+
     </div>);
 }
 
